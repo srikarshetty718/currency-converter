@@ -1,0 +1,49 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Currency Converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="card">
+  <h1>Currency Converter</h1>
+
+  <div class="row">
+    <div class="field">
+      <label>Amount</label>
+      <div class="amount-box">
+        <span id="fromSymbol">₹</span>
+        <input type="number" id="amount" value="1" min="0" step="any">
+      </div>
+    </div>
+  </div>
+
+  <div class="row currency-row">
+    <div class="field">
+      <label>From</label>
+      <select id="fromCurrency"></select>
+    </div>
+
+    <button id="swap">⇄</button>
+
+    <div class="field">
+      <label>To</label>
+      <select id="toCurrency"></select>
+    </div>
+  </div>
+
+  <div class="result">
+    <span id="toSymbol">$</span>
+    <span id="resultValue">0.00</span>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
